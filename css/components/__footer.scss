@@ -1,13 +1,18 @@
 @import "../Modules/_globals";
 
 footer {
-    width: 100%;
-    background-color: rgb(221, 222, 225);
-    padding: 2em;
-    ul {
-        width: 100%;
-        li{
-            margin: 0 1rem;
+    background-color: #e5e5e5;
+    font-size: 0.9rem;
+
+    .col-12 {
+        margin-bottom: -0.7rem;
+
+        a {
+            color: #2f3ab2;
+
+            &.link-hover:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

@@ -51,15 +51,17 @@ nav {
 }
 
 footer {
-  width: 100%;
-  background-color: rgb(221, 222, 225);
-  padding: 2em;
+  background-color: #e5e5e5;
+  font-size: 0.9rem;
 }
-footer ul {
-  width: 100%;
+footer .col-12 {
+  margin-bottom: -0.7rem;
 }
-footer ul li {
-  margin: 0 1rem;
+footer .col-12 a {
+  color: #2f3ab2;
+}
+footer .col-12 a.link-hover:hover {
+  text-decoration: underline;
 }
 
 .active {
@@ -156,6 +158,10 @@ footer ul li {
 
 #forem-button {
   background: #0a3e4a;
+}
+
+#login-button {
+  background: #3b49df;
 }
 
 * {
