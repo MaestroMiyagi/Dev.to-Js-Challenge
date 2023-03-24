@@ -150,6 +150,14 @@ footer ul li {
     top: 80%;
   }
 }
+#apple-button {
+  background: black;
+}
+
+#forem-button {
+  background: #0a3e4a;
+}
+
 * {
   border: 0;
   margin: 0;
