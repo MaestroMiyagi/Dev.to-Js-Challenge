@@ -1,4 +1,4 @@
-const BASE_URL = "https://kodemia-24js-default-rtdb.firebaseio.com/.json";
+const BASE_URL = "https://kodemia-24js-default-rtdb.firebaseio.com";
 
 const getPosts = async () => {
     let response = await fetch(`${BASE_URL}/POSTS/.json`);
