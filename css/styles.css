@@ -89,6 +89,10 @@ footer .col-12 a.link-hover:hover {
   justify-content: space-between;
 }
 
+/*.nav-items:hover {
+    background-color: white;
+    color: #2f3ab2 !important;
+} */
 .list-tag__main {
   display: flex;
   list-style: none;
