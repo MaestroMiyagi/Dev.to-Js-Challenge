@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <title>DEV Community 👩‍💻👨‍💻</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class=" navbar navbar-expand-lg navbar-light border-bottom bg-white ">
+            <div class="container d-flex flex-row justify-content-between align-items-center w-100 ">
+                <div class="d-flex align-items-center">
+                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/dev-badge.svg" alt="logo" width="40" height="40"
+                            class="d-inline-block align-text-top">
+                    </a>
+                    <div class="input-group  border rounded-2 align-items-center d-none d-lg-flex">
+                        <input type="search" class="form-control border border-0" placeholder="Search...">
+                        <div class="input-group-append">
+                            <button class="btn" type="button"><img src="../assets/search-icon.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div> SE DEBE CAMBIAR POR EL OTRO NAVBAR DONDE MUESTRA EL LOGIN Y EL CREATE ACCOUNT
+                    <button type="button" class="btn btn-outline-primary d-none d-lg-inline">Create Post</button>
+                    <img src="../assets/search-icon.svg" alt="search" class="iconsearch d-lg-none" width="24" height="24">
+                    <img src="../assets/notification-icon.svg" alt="bell" class="iconbell" width="24" height="24">
+                    <img src="../assets/profile-avatar.webp" alt="profile avatar" width="40" height="40" class="rounded-circle">
+                </div>-->
+            </div>
+        </nav>
+
+        <!-- Principal Content -->
+        <section class="container my-3">
+            <section class="row">
+                <main class=" col-12 col-lg-8 col-md-8">
+                    <div class="card text-center">
+                        <h1 class="card-title">Welcome to DEV Community</h1>
+                        <div class="card-body py-4 px-5">
+                            <p class="card-text">
+                                DEV Community is a community of 1,032,595 amazing developers
+                            </p>
+ 
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn text-white fw-bold" id="apple-button">Continue with Apple</button>
+                                <button type="button" class="btn text-white fw-bold" id="forem-button">Continue with Forem</button>
+                                <button type="button" class="btn btn-dark text-white fw-bold">Continue with GitHub</button>
+                                <button type="button" class="btn btn-info text-white fw-bold">Continue with Twitter</button>
+                            </div>
+
+                            <span>
+                                Have a password? Continue with your email address
+                            </span>
+                            <form id="user">
+                                <div class="mb-3">
+                                    <label for="Email" class="form-label">Email</label>
+                                    <input name="email" type="email" class="form-control" id="email-login">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Password" class="form-label">Password</label>
+                                    <input name="password" type="password" class="form-control" id="password-login">
+                                </div>
+                                
+                                <button type="submit" class="btn text-white fw-bold" id="login-button">Continue</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </main>
+                <!--End: Principal Main -->
+            </section>
+        </section>
+        <!-- End: Principal Content -->
+
+        <!-- Footer -->
+        <footer class="mt-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p><a class="link-hover" href="#">DEV Community 👩‍💻👨‍💻</a>— A constructive and inclusive social
+                            network for
+                            software developers. With you every step of your journey.</p>
+                    </div>
+                    <div class="col-12">
+                        <ul class="d-flex flex-wrap justify-content-center">
+                            <li class="me-4" style="list-style-type: none">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">Listings</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">Podcasts</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">Videos</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">Tags</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">Forem Shop</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">Sponsors</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">Contact</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">Guides</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">Software comparisons</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <ul class="d-flex flex-wrap justify-content-center">
+                            <li class="me-4" style="list-style-type: none">
+                                <a href="#">Code of Conduct</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="me-4">
+                                <a href="#">Terms of use</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p>Built on <a class="link-hover" href="https://www.forem.com">Forem</a> — the <a class="link-hover"
+                                href="https://dev.to/t/opensource">open source</a> software
+                            that powers <a class="link-hover" href="https://dev.to">DEV</a> and other inclusive communities.
+                        </p>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p>Made with love and <a class="link-hover" href="https://dev.to/t/rails">Ruby on Rails</a>. DEV
+                            Community 👩‍💻👨‍💻 <span title="copyright">©</span> 2016 - 2023.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End: Footer -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+            <script src="../js/form.js"></script>
+</body>
+
+</html>
