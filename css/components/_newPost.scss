@@ -33,7 +33,7 @@
     }
 
     &__btnAdd {
-        border-color: rgb(214, 214, 215);
+        border-color: gray;
         background-color: white;
         border-radius: 6px;
         font-size: 14px;
@@ -42,7 +42,10 @@
         height: 40px;
         font-weight: 500;
         letter-spacing: .3px;
-        color: rgb(61, 61, 61);
+        border: solid 3px grey;
+
+
+
     }
 
     &__input {
