@@ -182,9 +182,9 @@ footer ul li {
   font-size: 16px;
   font-weight: 500;
 }
-.crePost__btnAdd {
-  border-color: gray;
-  background-color: white;
+.crePost__btn-Add {
+  border-color: black;
+  background-color: whitesmoke;
   border-radius: 6px;
   font-size: 14px;
   padding: 6px, 14px, 14px, 6px;
@@ -192,7 +192,7 @@ footer ul li {
   height: 40px;
   font-weight: 500;
   letter-spacing: 0.3px;
-  border: solid 3px grey;
+  border: solid 3px black;
 }
 .crePost__input {
   color: rgb(82, 82, 82);
