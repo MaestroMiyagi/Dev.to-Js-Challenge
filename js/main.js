@@ -13,3 +13,7 @@ const printPosts = async () => {
 };
 
 printPosts();
+
+document.querySelector("#filter-relevant").forEach((post) => {
+    element.addEventListener("click", )
+})

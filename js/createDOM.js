@@ -7,43 +7,41 @@ const createPostCard = (image, date, title, hashtags, userID, userName, avatar) 
     let divCardBody = document.createElement("div");
     divCardBody.classList.add("card-body");
     let divUserInfo = document.createElement("div");
-    divUserInfo.classList.add("d-flex","mb-3","align-items-center");
+    divUserInfo.classList.add("d-flex", "mb-3", "align-items-center");
     let userImg = document.createElement("img");
-    userImg.classList.add("rounded-circle","border","object-fit-cover","me-3");
+    userImg.classList.add("rounded-circle", "border", "object-fit-cover", "me-3");
     userImg.src = avatar;
     let spanUser = document.createElement("span");
     spanUser.classList.add("d-flex", "flex-column");
     let user = document.createElement("h5");
-    user.classList.add("fs-6","fw-bold");
+    user.classList.add("fs-6", "fw-bold");
     let spanDate = document.createElement("span");
-    spanDate.classList.add("fs-6","fw-light");
+    spanDate.classList.add("fs-6", "fw-light");
     let divCardTitle = document.createElement("h2");
     divCardTitle.classList.add("card-title");
     let linkPost = document.createElement("a");
     let hashtagList = document.createElement("ul");
     hashtagList.classList.add("list-tag_main");
-    let hashtags = document.createElement("li");  
-    linkPost.addEventListener("click", ()=> {
+    let hashtags = document.createElement("li");
 
-    }) 
 
-//Create content
-user.innerText = username;
-spanDate.innerText = date;
-divCardTitle.innerText = title;
-linkPost.setAttribute("href", link);
+    //Create content
+    user.innerText = userName;
+    spanDate.innerText = date;
+    divCardTitle.innerText = title;
+    linkPost.setAttribute("href", link);
 
-//Insert content
-hashtagList.append(hashtags);
-divCardTitle.appendChild(linkPost);
-spanUser.append(user, spanDate);
-divUserInfo.append(userImg, spanUser);
-divCardBody.appendChild(divUserInfo);
-divCard.append(imgCard, divCardBody);
-return divCard;
+    //Insert content
+    hashtagList.append(hashtags);
+    divCardTitle.appendChild(linkPost);
+    spanUser.append(user, spanDate);
+    divUserInfo.append(userImg, spanUser);
+    divCardBody.appendChild(divUserInfo);
+    divCard.append(imgCard, divCardBody);
+    return divCard;
 };
 
-export {createPostCard};
+export { createPostCard };
 
 
 /*<div class="card shadow mb-2">
