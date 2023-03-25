@@ -1,15 +1,22 @@
-import { createPostCard } from "./createDOM.js";
-import { getPosts, getUsers } from "./api.js";
+let log = document.createElement("a")
+log.classList.add(..."btn btn-outline-primary me-2".split(" "))
+log.setAttribute("src", "./views/login.html")
+log.textContent = "Log In"
+let account = document.createElement("a")
+account.classList.add(..."btn btn-outline-primary".split(" "))
+account.textContent = "Create Account"
+let post = document.createElement("a")
+post.classList.add(..."btn btn-outline-primary".split(" "))
+post.textContent = "Create Post"
+let image = document.createElement("img")
+image.classList.add("rounded-circle")
+image.setAttribute("src", "./assets/profile-avatar.webp")
 
-const printPosts = async () => {
-    let posts = await getPosts();
-    let user = await getUsers();
-    let postsWrapper = document.getElementById("card-wrapper");
-    document.querySelectorAll("#card-wrapper card").forEach((element) => element.remove());
-    posts.forEach((post) => {
-        let {image, userId, userName, avatar, date, title, hashtags, relevant} = post;
-        postsWrapper.append(createPostCard(image, userName, avatar, date, title, hashtags, relevant));
-    });
-};
 
-printPosts();
+const login = () => {
+    let container = document.getElementById("rigthSide")
+    let token = localStorage.getItem("token")
+    token ? container.append(post, image) : container.append(log, account)
+}
+
+login()
