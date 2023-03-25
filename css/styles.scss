@@ -7,16 +7,17 @@
 @use "./components/_postAsideRight";
 @use "./components/_postAsideLeft";
 @use "./components/_loginForm";
+@use "./components/newPost";
 
 
 
-*{
+* {
     border: 0;
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
 
-body{
+body {
     background-color: #F5F5F5;
 }
