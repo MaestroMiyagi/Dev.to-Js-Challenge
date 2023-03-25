@@ -1,4 +1,4 @@
-const BASE_URL = "https://kodemia-24js-default-rtdb.firebaseio.com";
+const BASE_URL = "https://kodemia-24js-default-rtdb.firebaseio.com/.json";
 
 const getPosts = async () => {
     let response = await fetch(`${BASE_URL}/POSTS/.json`);
@@ -12,4 +12,25 @@ const getUsers = async () => {
     return data;
 };
 
-export { getPosts, getUsers };
+const deletePost = async (postKey) => {
+    console.log(`Eliminando ${postKey}...`)
+    let response = await fetch(
+        `${BASE_URL}${postKey}/${REST}`,
+        {method:"DELETE"
+    })
+    let data = await response.json()
+    console.log("Post eliminado")
+    return data
+}
+
+const createPost = async (postObject) => {
+    let response = await fetch(
+        `${BASE_URL}${REST}`,{
+            method: "POST",
+            body: JSON.stringify(postObject)
+        })
+    let data = await response.json()
+    return data
+}
+
+export { getPosts, getUsers, deletePost, createPost };
