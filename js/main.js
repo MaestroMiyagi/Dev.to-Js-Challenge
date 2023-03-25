@@ -20,3 +20,7 @@ const login = () => {
 }
 
 login()
+
+document.querySelector("#filter-relevant").forEach((post) => {
+    element.addEventListener("click", )
+})
