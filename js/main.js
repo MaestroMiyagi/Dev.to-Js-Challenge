@@ -7,6 +7,7 @@ let account = document.createElement("a")
 account.classList.add(..."btn btn-outline-primary".split(" "))
 account.textContent = "Create Account"
 let post = document.createElement("a")
+post.setAttribute("href", "./views/newPost.html")
 post.classList.add(..."btn btn-outline-primary".split(" "))
 post.textContent = "Create Post"
 let image = document.createElement("img")

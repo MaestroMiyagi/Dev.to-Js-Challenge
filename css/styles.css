@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
 }
+.crayons-icon{
+  fill: white !important;
+}
 .list-options li a {
   display: block;
   color: #08090a;
