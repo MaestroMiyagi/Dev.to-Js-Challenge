@@ -22,7 +22,7 @@ const createPostCard = (image, date, title, hashtags, userID, userName, avatar) 
     let linkPost = document.createElement("a");
     let hashtagList = document.createElement("ul");
     hashtagList.classList.add("list-tag_main");
-    let hashtags = document.createElement("li");
+    let hashtagsItem = document.createElement("li");
 
 
     //Create content

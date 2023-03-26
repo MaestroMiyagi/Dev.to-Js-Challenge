@@ -1,3 +1,4 @@
+import { printPosts } from "./post.js";
 let log = document.createElement("a")
 log.classList.add(..."btn btn-outline-primary me-2".split(" "))
 log.setAttribute("src", "./views/login.html")
@@ -21,6 +22,9 @@ const login = () => {
 
 login()
 
-document.querySelector("#filter-relevant").forEach((post) => {
+/*document.querySelector("#filter-relevant").forEach((post) => {
     element.addEventListener("click", )
-})
+})*/
+
+console.log("api call")
+let dataApi = printPosts();

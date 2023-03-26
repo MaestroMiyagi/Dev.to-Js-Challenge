@@ -12,4 +12,4 @@ const printPosts = async () => {
     });
 };
 
-printPosts();
+export {printPosts}

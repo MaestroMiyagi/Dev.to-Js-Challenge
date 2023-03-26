@@ -7,7 +7,7 @@ const getPosts = async () => {
 };
 
 const getUsers = async () => {
-    let response = await fetch(`${BASE_URL}USERS/.json`);
+    let response = await fetch(`${BASE_URL}/USERS/.json`);
     let data = await response.json();
     return data;
 };
