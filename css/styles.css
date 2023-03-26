@@ -103,6 +103,7 @@ footer .col-12 a.link-hover:hover {
   margin: 0 0.5em;
   color: #808080;
   cursor: pointer;
+  list-style: none;
 }
 .list-tag__main li:hover {
   border: 1px solid #808080;
