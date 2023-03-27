@@ -1,4 +1,5 @@
-import { printPosts } from "./post.js";
+import { printRelevant, printLatest, printSearch } from "./post.js";
+
 let log = document.createElement("a")
 log.classList.add(..."btn btn-outline-primary me-2".split(" "))
 log.setAttribute("href", "./views/login.html")
@@ -23,17 +24,48 @@ const login = () => {
 }
 
 login()
+// Pintar post relevantes al inicio
+printRelevant();
 
-/*document.querySelector("#filter-relevant").forEach((post) => {
-    element.addEventListener("click", )
-})*/
-
-console.log("api call")
-let dataApi = printPosts();
 
 const logoutLink = document.getElementById('logout-link');
 
 logoutLink.addEventListener('click', () => {
-  localStorage.removeItem('token');
-  window.location.replace('../index.html');
+    localStorage.removeItem('token');
+    window.location.replace('../index.html');
 });
+
+
+// Menus
+
+let relevantMenu = document.getElementById("filter-relevant");
+let latestMenu = document.getElementById("filter-latest");
+
+relevantMenu.addEventListener('click', () => {
+    relevantMenu.classList.add("text-blac");
+    relevantMenu.classList.remove("text-black-50");
+
+    latestMenu.classList.remove("text-black");
+    latestMenu.classList.add("text-black-50");
+
+    printRelevant();
+});
+
+latestMenu.addEventListener('click', () => {
+
+    latestMenu.classList.add("text-black");
+    latestMenu.classList.remove("text-black-50");
+
+    relevantMenu.classList.remove("text-black");
+    relevantMenu.classList.add("text-black-50");
+
+    printLatest();
+});
+
+let btnSearch = document.getElementById("search-button");
+let inputSearch = document.getElementById("search-input");
+
+btnSearch.addEventListener('click', () => {
+    let searchTerm = inputSearch.value;
+    printSearch(searchTerm);
+})

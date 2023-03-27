@@ -6,12 +6,6 @@ const getPosts = async () => {
     return data;
 };
 
-const getUsers = async () => {
-    let response = await fetch(`${BASE_URL}/users.json`);
-    let data = await response.json();
-    return data;
-};
-
 const deletePost = async (postKey) => {
     console.log(`Eliminando ${postKey}...`)
     let response = await fetch(
@@ -33,4 +27,4 @@ const createPost = async (postObject) => {
     return data
 }
 
-export { getPosts, getUsers, deletePost, createPost };
+export { getPosts, deletePost, createPost };
