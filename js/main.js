@@ -17,11 +17,19 @@ image.classList.add("rounded-circle")
 image.setAttribute("src", "./assets/profile-avatar.webp")
 image.setAttribute("width", "40")
 image.setAttribute("heigth", "40")
+let collapse = document.createElement("a")
+collapse.setAttribute("href", "#collapse-menu")
+collapse.setAttribute("data-bs-toggle", "collapse")
+collapse.setAttribute("role", "button")
+collapse.appendChild(image)
+
+
+
 
 const login = () => {
     let container = document.getElementById("rigthSide")
     let token = localStorage.getItem("token")
-    token ? container.append(post, image) : container.append(log, account)
+    token ? container.append(post, collapse) : container.append(log, account)
 }
 
 login()
