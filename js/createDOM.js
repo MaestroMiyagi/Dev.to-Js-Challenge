@@ -1,7 +1,6 @@
-const createPostCard = (postImage, date, title, tags, userName, userAvatar) => {
+const createPostCard = (postImage, date, title, tags, userName, userAvatar, id) => {
     let divCard = document.createElement("div");
     divCard.classList.add("card");
-
     let divCardBody = document.createElement("div");
     divCardBody.classList.add("card-body");
     let divUserInfo = document.createElement("div");
@@ -17,7 +16,10 @@ const createPostCard = (postImage, date, title, tags, userName, userAvatar) => {
     spanDate.classList.add("fs-6", "fw-light");
     let divCardTitle = document.createElement("h2");
     divCardTitle.classList.add("card-title");
-    //let linkPost = document.createElement("a");
+    let linkPost = document.createElement("a");
+    linkPost.href = `views/postView.html?postId=${id}`;
+    let spanTitle = document.createElement("span");
+    spanTitle.classList.add("d-flex");
     let tagList = document.createElement("ul");
     tagList.classList.add("list-tag_main");
     let tagItem = document.createElement("li");
@@ -26,13 +28,13 @@ const createPostCard = (postImage, date, title, tags, userName, userAvatar) => {
     //Create content
     user.innerText = userName;
     spanDate.innerText = date;
-    divCardTitle.innerText = title;
-    //linkPost.setAttribute("href", link);
-    tagItem.innerText = `#${tags}`;
+    spanTitle.innerText = title;
+    tagItem.innerText = tags;
 
     //Insert content
     tagList.append(tagItem);
-    //divCardTitle.appendChild(linkPost);
+    linkPost.appendChild(spanTitle);
+    divCardTitle.append(linkPost);
     spanUser.append(user, spanDate);
     divUserInfo.append(userImg, spanUser);
     divCardBody.append(divUserInfo, divCardTitle, tagList);
@@ -46,6 +48,6 @@ const createPostCard = (postImage, date, title, tags, userName, userAvatar) => {
     return divCard;
 };
 
-export { createPostCard };
+export { createPostCard};
 
 

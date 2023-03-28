@@ -1,5 +1,6 @@
 import { printRelevant, printLatest, printSearch } from "./post.js";
 
+
 let log = document.createElement("a")
 log.classList.add(..."btn btn-outline-primary me-2".split(" "))
 log.setAttribute("href", "./views/login.html")
@@ -24,6 +25,7 @@ const login = () => {
 }
 
 login()
+
 // Pintar post relevantes al inicio
 printRelevant();
 

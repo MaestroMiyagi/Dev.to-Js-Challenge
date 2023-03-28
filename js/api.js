@@ -27,4 +27,11 @@ const createPost = async (postObject) => {
     return data
 }
 
-export { getPosts, deletePost, createPost };
+const getIndividualPost = async(postId)=>{
+    let response = await fetch(`${BASE_URL}/posts/${postId}.json`)
+    let data = await response.json()
+    return data
+
+}
+
+export { getPosts, deletePost, createPost, getIndividualPost };

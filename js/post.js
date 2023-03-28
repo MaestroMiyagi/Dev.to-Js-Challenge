@@ -9,7 +9,7 @@ let postsWrapper = document.getElementById("card-wrapper");
 const printRelevant = async () => {
     postsWrapper.innerHTML = "";
     Object.values(postData).forEach(post => {
-        post.relevant ? postsWrapper.append(createPostCard(post.postImage, post.date, post.title, post.tags, post.userName, post.userAvatar)) : null;
+        post.relevant ? postsWrapper.append(createPostCard(post.postImage, post.date, post.title, post.tags, post.userName, post.userAvatar,post.id)) : null;
     });
 };
 
@@ -22,7 +22,7 @@ const printLatest = async () => {
 
     // Cargar en DOM
     dataLatest.forEach(post => {
-        postsWrapper.append(createPostCard(post.postImage, post.date, post.title, post.tags, post.userName, post.userAvatar));
+        postsWrapper.append(createPostCard(post.postImage, post.date, post.title, post.tags, post.userName, post.userAvatar,post.id));
     });
 }
 
@@ -31,9 +31,9 @@ const printSearch = async (searchTerm) => {
 
     const dataSearch = Object.values(postData).filter(({ text, title, tags }) => text.includes(searchTerm) || title.includes(searchTerm) || tags.includes(searchTerm));
 
-    // Cargar en doom
+    // Cargar en DIM
     dataSearch.forEach(post => {
-        postsWrapper.append(createPostCard(post.postImage, post.date, post.title, post.tags, post.userName, post.userAvatar));
+        postsWrapper.append(createPostCard(post.postImage, post.date, post.title, post.tags, post.userName, post.userAvatar,post.id));
     });
 
 }
