@@ -112,6 +112,15 @@ footer .col-12 a.link-hover:hover {
   cursor: pointer;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
+.commment-user-img {
+  width: 40px;
+  height: 40px;
+}
+
 .left-aside {
   position: fixed;
   bottom: 0;
