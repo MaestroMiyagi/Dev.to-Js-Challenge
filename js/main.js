@@ -75,15 +75,6 @@ navbarLogin() */
 // Pintar post relevantes al inicio
 printRelevant();
 
-
-const logoutLink = document.getElementById('logout-link');
-
-logoutLink.addEventListener('click', () => {
-    localStorage.removeItem('token');
-    window.location.replace('../index.html');
-});
-
-
 // Menus
 
 let relevantMenu = document.getElementById("filter-relevant");
@@ -117,3 +108,12 @@ btnSearch.addEventListener('click', () => {
     let searchTerm = inputSearch.value;
     printSearch(searchTerm);
 })
+
+
+//Logout Event Listener
+const logoutLink = document.getElementById('logout-link');
+
+logoutLink.addEventListener('click', () => {
+    localStorage.removeItem('token');
+    window.location.replace('../index.html');
+});
