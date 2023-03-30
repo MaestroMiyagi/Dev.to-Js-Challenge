@@ -3,7 +3,7 @@
 @use "./components/_navbar";
 @use "./components/_footer";
 @use "./components/_mainCards";
-@use "./components/_postCard";
+@use "./components/__postCard";
 @use "./components/_postAsideRight";
 @use "./components/_postAsideLeft";
 @use "./components/_loginForm";
@@ -21,3 +21,24 @@
 body {
     background-color: #F5F5F5;
 }
+
+.crayons-link {
+    color: #3b49df;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .crayons-link:hover {
+    text-decoration: underline;
+  }
+
+  #avatarImage{
+    height: 40px;
+    width: 40px;
+  }
+  
+  #userMenu{
+    position: relative;
+    bottom: 40px; 
+    left: 40px;
+  }

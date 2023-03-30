@@ -17,7 +17,7 @@
         <div class="container crePost">
             <div class="row d-flex justify-content-between mt-3 crePost__letters">
                 <div class="col-auto d-flex">
-                    <a class="navbar-brand"><img style="height:calc( 50px - .3125rem * 2)"
+                    <a href="../index.html" class="navbar-brand"><img style="height:calc( 50px - .3125rem * 2)"
                             src="../assets/dev-badge.svg"></img></a>
                     <p class="mt-2 ms-3">Create Post</p>
                 </div>
@@ -28,12 +28,12 @@
             </div>
             <div class="row crePost__container card">
                 <div class="col-auto">
-                    <article class="crePost__card mt-4">
+                    <article class="crePost__card mt-4" id="newpost">
                         <div>
-                            <button class="crePost__btn-Add mt-2 mb-4 ms-2">Add a cover image</button>
+                            <button class="crePost__btn-Add mt-2 mb-4 ms-2 btn btn-outline-secondary">Add a cover image</button>
                             <input type="text" class="form-control border-0 crePost__input" id="input-title"
-                                aria-describedby="emailHelp" placeholder="New post title here...">
-                            <p class="ms-3  mb-4 mt-2 cePost__label">Add up to 4 tags...</p>
+                                aria-describedby="emailHelp" placeholder="New post title here..." name="title">
+                            <input type="text" placeholder="Add up to 4 tags..." class="form-control border-0" id="tags" name="tags">
                         </div>
                     </article>
                 </div>
@@ -114,8 +114,8 @@
             </div>
 
             <div class="row crePost__container crePost__container--text card">
-                <div class="col-auto">
-                    <textarea name="user-message" id="contenido" cols="20" rows="10" class="form-control border-0"
+                <div class="col-auto" id="newpost">
+                    <textarea name="text" id="content" cols="20" rows="10" class="form-control border-0"
                         placeholder="Write your post content here"></textarea>
                 </div>
             </div>
@@ -131,7 +131,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
-    <script type="module" src="./js/createPost.js"></script>
+    <script type="module" src="../js/createPost.js"></script>
 </body>
 
 </html>

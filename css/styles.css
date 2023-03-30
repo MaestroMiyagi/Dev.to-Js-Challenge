@@ -42,7 +42,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .input-group, .btn-outline-primary {
+  .input-group {
     display: none;
   }
 }
@@ -93,22 +93,32 @@ footer .col-12 a.link-hover:hover {
     background-color: white;
     color: #2f3ab2 !important;
 } */
-.list-tag__main {
+.list-tag_main {
   display: flex;
   list-style: none;
   padding: 0;
   margin-bottom: 2em;
 }
-.list-tag__main li {
+.list-tag_main li {
   margin: 0 0.5em;
   color: #808080;
   cursor: pointer;
+  list-style: none;
 }
-.list-tag__main li:hover {
+.list-tag_main li:hover {
   border: 1px solid #808080;
   border-radius: 0.5em;
   padding: 0.2em;
   cursor: pointer;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.commment-user-img {
+  width: 40px;
+  height: 40px;
 }
 
 .left-aside {
@@ -294,4 +304,25 @@ textarea {
 
 body {
   background-color: #F5F5F5;
+}
+
+.crayons-link {
+  color: #3b49df;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.crayons-link:hover {
+  text-decoration: underline;
+}
+
+#avatarImage {
+  height: 40px;
+  width: 40px;
+}
+
+#userMenu {
+  position: relative;
+  bottom: 40px;
+  left: 40px;
 }/*# sourceMappingURL=styles.css.map */

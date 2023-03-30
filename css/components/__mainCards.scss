@@ -27,7 +27,7 @@
     color: #2f3ab2 !important;
 } */
 
-.list-tag__main{
+.list-tag_main{
     display: flex;
     list-style: none;
     padding: 0;
@@ -37,6 +37,7 @@
         margin: 0 0.5em;
         color: $syntax-comment-color;
         cursor: pointer;
+        list-style: none;
     }
 
     li:hover{
@@ -45,4 +46,8 @@
         padding: 0.2em;
         cursor: pointer;
     }
+}
+
+.nav-link {
+    cursor: pointer;
 }

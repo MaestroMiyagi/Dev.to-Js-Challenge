@@ -234,50 +234,24 @@
             <main class=" col-12 col-lg-8 col-md-8">
                 <section class="">
                     <div class="card ">
-                        <img src="https://picsum.photos/200/80" class="card-img-top " alt="...">
+                        <img class="card-img-top " id="post-image">
                         <div class="card-body py-4 px-5">
                             <div class="d-flex mb-3 align-items-center ">
-                                <img class="rounded-circle border object-fit-cover me-3" src="https://i.pravatar.cc/"
-                                    style="width:40px;">
+                                <img class="rounded-circle border object-fit-cover me-3" id="user-image" style="width:40px;">
                                 <span class="d-flex  flex-column">
-                                    <h5 class="fs-6 fw-bold">Jonathan Walters</h5>
-                                    <span class="fs-6 fw-light">Feb 1 (13 hours ago)</span>
+                                    <h5 class="fs-6 fw-bold" id="user-name"></h5>
+                                    <span class="fs-6 fw-light" id="post-date"></span>
                                 </span>
                             </div>
                             <div class="">
-                                <h1 class="card-title">Netlify Acquires GatsbyJS</h1>
+                                <h1 class="card-title" id="post-title"></h1>
                                 <ul class="list-tag__main">
-                                    <li class="">#news</li>
-                                    <li class="">#javascript</li>
-                                    <li class="">#webdev</li>
-                                    <li class="">#gatsby</li>
+                                    <li id="post-tags" style="list-style: none;"></li>
                                 </ul>
 
                             </div>
                             <div>
-                                <p class="card-text">
-                                    🚀 20 Engineering Blogs from Product companies like Facebook, Uber, Netflix, Stripe
-                                    that have inspired and helped me raise the bar on building great products.
-                                    <br>
-                                    Highly recommended for Software Engineers, Architects, Engineering Manager and
-                                    Product Manages.
-                                </p>
-                                <h3>Node Best Practices</h3>
-                                <p>
-                                    📝 The largest Node.js best practices list (August 2020)
-                                    <br>
-                                    Curated from the top ranked articles and books on Node.js best practices, this list
-                                    will help you become a better Node.js developer
-                                </p>
-                                <h3>Node Best Practices</h3>
-                                <p>
-                                    📝 The largest Node.js best practices list (August 2020)
-                                    <br>
-                                    Curated from the top ranked articles and books on Node.js best practices, this list
-                                    will help you become a better Node.js developer
-                                </p>
-                                <span>+81.7k ⭐ ️=> <a href="">https://github.com/goldbergyoni/nodebestpractices</a>
-                                </span>
+                                <p class="card-text" id="post-text"></p>
                             </div>
 
 
@@ -285,10 +259,7 @@
                         <hr>
                         <div class=" px-5 py-3">
                             <div class="d-flex justify-content-between mb-5">
-                                <h4>Top comments (1)</h4>
-                                <p class="w-50">Unable to load Comment Subscription component.
-                                    Try refreshing the page.
-                                </p>
+                                <h4>Top comments</h4>
                             </div>
                             <div class="d-flex">
                                 <img class="rounded-circle border object-fit-cover me-3" src="https://i.pravatar.cc/"
@@ -301,21 +272,8 @@
                                 <button type="button" class="btn btn-outline-primary mt-3">Cancel</button>
                             </div>
                             <div>
-                                <div class="d-flex">
-                                    <img class="rounded-circle border object-fit-cover me-3"
-                                        src="https://i.pravatar.cc/" style="width:40px; height:40px;">
-                                    <div class="card w-100 p-3">
-                                        <h5 class="fs-6 fw-bold">Jonathan Walters <span class="fs-6 fw-light">Feb 1 (13
-                                                hours ago)</span></h5>
-                                        <p class="card-text">
-                                            🚀 20 Engineering Blogs from Product companies like Facebook, Uber, Netflix,
-                                            Stripe that have inspired and helped me raise the bar on building great
-                                            products.
-                                            <br>
-                                            Highly recommended for Software Engineers, Architects, Engineering Manager
-                                            and Product Manages.
-                                        </p>
-                                    </div>
+                                <div id="comment-wrapper">
+                                   
                                 </div>
 
                                 <div class="ms-5 ps-2 mb-4 d-flex">
@@ -350,16 +308,15 @@
                 <div class="card p-3 ">
                     <a href="" class="text-decoration-none text-black">
                         <div class="d-flex mb-3 align-items-center ">
-                            <img class="rounded-circle border object-fit-cover me-3" src="https://i.pravatar.cc/"
+                            <img class="rounded-circle border object-fit-cover me-3" id="user-image-info" 
                                 style="width:40px;">
                             <span class="d-flex  flex-column">
-                                <h5 class="fs-5 fw-bold">Jonathan Walters</h5>
+                                <h5 class="fs-5 fw-bold"  id="user-name-info"></h5>
                             </span>
                         </div>
                     </a>
                     <button class="btn btn-primary mb-3" type="button">Follow</button>
-                    <p class="fw-bold fs-6 m-0">JOINED</p>
-                    <p class="fs-6 m-0">23 Mar 2022</p>
+                    <p class="fs-6 m-0" id="user-info"></p>
                 </div>
                 <div class="card mt-3">
                     <ul class="list-group list-group-flush">
@@ -465,6 +422,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+        <script type="module" src="../js/individualPost.js"></script>
 </body>
 
 </html>
