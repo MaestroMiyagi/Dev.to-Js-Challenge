@@ -23,6 +23,8 @@ const createPostCard = (postImage, date, title, tags, userName, userAvatar, id) 
     let tagList = document.createElement("ul");
     tagList.classList.add("list-tag_main");
     let tagItem = document.createElement("li");
+    let deleteBtn = document.createElement("button")
+    deleteBtn.textContent = "x"
 
 
     //Create content
@@ -37,7 +39,7 @@ const createPostCard = (postImage, date, title, tags, userName, userAvatar, id) 
     divCardTitle.append(linkPost);
     spanUser.append(user, spanDate);
     divUserInfo.append(userImg, spanUser);
-    divCardBody.append(divUserInfo, divCardTitle, tagList);
+    divCardBody.append(divUserInfo, divCardTitle, tagList, deleteBtn);
     if (postImage != undefined) {
         let imgCard = document.createElement("img");
         imgCard.classList.add("card-img-top");

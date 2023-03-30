@@ -11,3 +11,21 @@ newPost.forEach((field) => {
       console.log(post); 
     });
   });
+
+  const createPost = async (post) => {
+    console.log(post)
+    let response = await fetch(
+      "https://kodemia-24js-default-rtdb.firebaseio.com/posts/.json",
+      {
+        method: "POST",
+        body: JSON.stringify(post),
+      }
+    );
+    let data = await response.json();
+    console.log(data);
+    return data;
+  };
+  
+document.getElementById("savePost").addEventListener("click", () => {
+    createPost(post)
+})

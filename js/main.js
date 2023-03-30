@@ -28,8 +28,13 @@ let htmlContent = ``
 
 if (isLoggedIn) {
   htmlContent = `
-<button class="crayons-header__menu__trigger position-absolute top-50 end-0 translate-middle-y me-5" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-  <span class="crayons-avatar crayons-avatar--l"><img alt="" id="avatarImage" class="crayons-avatar__image rounded-circle" src="./assets/profile-avatar.webp"></span>
+  <div>
+  <button type="button" class="btn btn-outline-primary d-none d-lg-inline"><a
+  href="../views/newPost.html">Create
+  Post</button></a>
+  <img src="../assets/notification-icon.svg" alt="bell" class="iconbell" width="24" height="24">
+  <button class="crayons-header__menu__trigger position-absolute top-50 end-0 translate-middle-y me-5" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+  <img alt="" id="avatarImage" class="rounded-circle" src="./assets/profile-avatar.webp">
 </button>
 
 <div class="crayons-header__menu__dropdown dropdown-menu position-absolute top-100 start-100 translate-middle" aria-labelledby="dropdownMenuButton" id="userMenu">
@@ -38,7 +43,8 @@ if (isLoggedIn) {
   <a class="dropdown-item" href="#">Reading list</a>
   <li><hr class="dropdown-divider"></li>
   <a class="dropdown-item" href="#" id="logout-link">Sign Out</a>
-</div>`
+</div>
+  </div>`
 } else {
   htmlContent = `<div class="row">
   <div class="col-4 position-absolute top-50 end-0 translate-middle-y">
